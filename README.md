@@ -7,7 +7,7 @@ This script has been tested to work with mitmproxy v4.0 and Python v3.7.  It sav
 
 ## Usage
 
-Here's I use the script:
+Here's how I use the script:
 
 `mitmproxy --listen-port 8080 --ssl-insecure --scripts ~/mitmproxy/scripts/save-flow.py`
 
