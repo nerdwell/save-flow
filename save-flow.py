@@ -20,7 +20,7 @@ def response( flow: http.HTTPFlow ) -> None:
         if( s_fname.find( '.' ) > -1 ):
             s_fname = s_folder + s_fname[ :(s_fname.find( '.' )) ]
             
-        s_url = flow.request.pretty_url.replace( 'https://', '' )
+        s_url = flow.request.pretty_url.replace( 'http://', '' ).replace( 'https://', '' )
         s_url = s_url.replace( '.', '-' )
         s_url = s_url.replace( '/', '--' )
         s_fname = s_fname + "_" + s_url + ".flow"
